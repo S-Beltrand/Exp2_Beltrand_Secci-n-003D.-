@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VisualGeek</title>
+    <link rel="shortcut icon" href="img/LogoMakr-4siPnE.png" type="image/x-icon">    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Estilos.css"> 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <script>
+  $(function(){
+    $("#formuralito").validate({
+      rules: {
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    name: "required",
+                    ape: "required",
+                    fecha: "required",
+                    fono:"required"
+                    
+                }, //rules
+            messages: {
+                email: {
+                    required: 'Ingresa tu correo electrónico',
+                    email: 'Formato de correo no válido'
+                },
+                name: {
+                    required: 'Ingresa tu Nombre',
+                    minlength: 'Caracteres insuficientes'
+                },
+                ape: {
+                    required: 'Ingresa tu Apellido',
+                    minlength: 'Caracteres insuficientes'
+                },
+                fono:{
+                    required: 'Ingrese un número de celular',
+                    minlength: 'Cantidad de digitos insuficiente'
+                },
+                fecha:{
+                    required: 'Seleccione una fecha válida',
+                    min: 'Fecha no valida'
+                },
+            }//messages
+        }); //$('#mi-formulario').validate
+    }); //function
+            
+</script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="file:///C:/Users/hp/Desktop/proyecto%20web/index.html">
+      <img src="img/LogoMakr-4siPnE.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      VisualGeek
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="file:///C:/Users/hp/Desktop/proyecto%20web/Quienes%20somos.html#">Quiénes Somos <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///C:/Users/hp/Desktop/Proyecto%20web/Galeria.html">Lore</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="caja"> 
+  <form action="" id="formuralito">
+    <div class="form">
+    <h1>Contactanos</h1>
+    <div class="grupo">
+      <input type="text" name="name" minlength="4" required><span class="barra"></span>
+      <label class="etiqueta">Nombre</label>
+    </div>
+    <div class="grupo">
+      <input type="text" name="ape" id="lastname" minlength="6" required><span class="barra"></span>
+      <label class="etiqueta">Apellido</label>
+    </div>
+    <div class="grupo">
+      <input type="date" name="fecha" max="2005-01-01" required><span class="barra"></span>
+      <label class="etiqueta">Fecha de naciemiento</label>
+    </div>
+    <div class="grupo">
+      <input type="email" name="email" id="email"  required placeholder="nombre@dominio.cl"><span class="barra"></span>
+      <label class="etiqueta">Email</label>
+    </div>
+    <div class="grupo">
+      <input type="text" name="fono" minlength="9" required><span class="barra"></span>
+      <label class="etiqueta">telefono</label>
+    </div>
+    <button type="sumbit">Contactar</button>
+      </div>
+    </div>
+  </form>
+  </div>
+   
+      
+
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+      <script src="js/funciones.js"></script>
+
+
+
+      <footer class="footer">
+        <div class="footer-div">
+          <h5>copyright &copy;2020 VisualGeek. designed by me </h5>
+          <p>redes sociales</p>
+          <a href="https://web.facebook.com/?stype=lo&jlou=AfeakNEOefUVTE1_JwI7WHwzMgGr3XnxvcFx7LVy8-uADWbPrV_SbvQ5OOXf44rXTcgYKf4bl0QIeOlAFWhCFGgCmyk8A60wWaB_KQJutnp08w&smuh=32775&lh=Ac8qcXSibt3tMElaj1E"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.youtube.com/watch?v=wrEOjNOKgC0&ab_channel=GabrielCA"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/chileno.sin.coronavirus/?hl=es-la"><i class="fab fa-instagram"></i></a>
+   
+        </div>
+       
+     
+      </footer>
+</body>
+
+
+
+</html>
