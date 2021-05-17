@@ -42,3 +42,40 @@ $(function(){
             }
         }); 
     }); 
+
+    $(function(){
+        $("#formu").validate({
+          rules: {
+                        email: {
+                            required: true,
+                            email: true
+                        },
+                        nombre: "required",
+                        ape: "required",
+                        edad: "required",
+                        resu: "required"
+                    }, 
+                messages: {
+                    resu:{
+                        required: 'Ingrese un texto valido',
+                        max: 'texto no valido'
+                    },
+                    email: {
+                        required: 'Ingresa tu correo electrónico',
+                        email: 'Formato de correo no válido'
+                    },
+                    nombre: {
+                        required: 'Ingresa tu Nombre',
+                        minlength: 'Caracteres insuficientes'
+                    },
+                    ape: {
+                        required: 'Ingresa tu Apellido',
+                        minlength: 'Caracteres insuficientes'
+                    },
+                    edad:{
+                        required: 'Ingrese una edad valida',
+                        max: 'Edad no valida'
+                    }
+                }
+            }); 
+        }); 

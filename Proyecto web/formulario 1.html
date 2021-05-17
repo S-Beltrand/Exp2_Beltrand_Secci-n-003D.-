@@ -33,16 +33,33 @@
   </nav>
    
   <div class="box"> 
-  <form action="" class="form1">
-      <h1>Tu noticia</h1>
-      <input type="text" name="" placeholder="Nombres">
-      <input type="text" name="" placeholder="Apellidos">
-      <input type="text" name="" placeholder="Edad">
-      <input type="text" name="" placeholder="Email">
-      <textarea name="Mensaje" placeholder="Motivo/Resumen"></textarea>
-      <input type="button" value="ENVIAR" id="boton">
+    <form id="formu" class="form1">
+      <div class="form">
+      <h1>Envia tu noticia</h1>
+      <div class="grupo">
+        <input type="text" name="nombre" minlength="4" required><span class="barra"></span>
+        <label class="etiqueta">Nombre</label>
       </div>
-  </form>
+      <div class="grupo">
+        <input type="text" name="ape" minlength="6" required><span class="barra"></span>
+        <label class="etiqueta">Apellido</label>
+      </div>
+      <div class="grupo">
+        <input type="number" name="edad" minlength="2" required><span class="barra"></span>
+        <label class="etiqueta">Edad</label>
+      </div>
+      <div class="grupo">
+        <input type="email" name="email" required placeholder="nombre@dominio.cl"><span class="barra"></span>
+        <label class="etiqueta">Email</label>
+      </div>
+      <div class="grupo">
+        <input type="text" name="resu" minlength="15" required><span class="barra"></span>
+        <label class="etiqueta">Resumen de la noticia</label>
+      </div>
+      <button type="sumbit">Contactar</button>
+        </div>
+      </div>
+    </form>
   </div>
    
       
