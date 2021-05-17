@@ -10,46 +10,6 @@
     <link rel="stylesheet" href="css/Estilos.css"> 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
-  <script>
-  $(function(){
-    $("#formuralito").validate({
-      rules: {
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    name: "required",
-                    ape: "required",
-                    fecha: "required",
-                    fono:"required"
-                    
-                }, //rules
-            messages: {
-                email: {
-                    required: 'Ingresa tu correo electrónico',
-                    email: 'Formato de correo no válido'
-                },
-                name: {
-                    required: 'Ingresa tu Nombre',
-                    minlength: 'Caracteres insuficientes'
-                },
-                ape: {
-                    required: 'Ingresa tu Apellido',
-                    minlength: 'Caracteres insuficientes'
-                },
-                fono:{
-                    required: 'Ingrese un número de celular',
-                    minlength: 'Cantidad de digitos insuficiente'
-                },
-                fecha:{
-                    required: 'Seleccione una fecha válida',
-                    min: 'Fecha no valida'
-                },
-            }//messages
-        }); //$('#mi-formulario').validate
-    }); //function
-            
-</script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-dark">
@@ -73,7 +33,7 @@
   </nav>
 
   <div class="caja"> 
-  <form action="" id="formuralito">
+  <form id="formuralito">
     <div class="form">
     <h1>Contactanos</h1>
     <div class="grupo">
@@ -81,20 +41,20 @@
       <label class="etiqueta">Nombre</label>
     </div>
     <div class="grupo">
-      <input type="text" name="ape" id="lastname" minlength="6" required><span class="barra"></span>
+      <input type="text" name="ape" minlength="6" required><span class="barra"></span>
       <label class="etiqueta">Apellido</label>
     </div>
     <div class="grupo">
       <input type="date" name="fecha" max="2005-01-01" required><span class="barra"></span>
-      <label class="etiqueta">Fecha de naciemiento</label>
+      <label class="etiqueta">Fecha de nacimiento</label>
     </div>
     <div class="grupo">
-      <input type="email" name="email" id="email"  required placeholder="nombre@dominio.cl"><span class="barra"></span>
+      <input type="email" name="email" required placeholder="nombre@dominio.cl"><span class="barra"></span>
       <label class="etiqueta">Email</label>
     </div>
     <div class="grupo">
       <input type="text" name="fono" minlength="9" required><span class="barra"></span>
-      <label class="etiqueta">telefono</label>
+      <label class="etiqueta">Teléfono</label>
     </div>
     <button type="sumbit">Contactar</button>
       </div>
@@ -105,11 +65,12 @@
       
 
     
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
       <script src="js/funciones.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
 
 
 

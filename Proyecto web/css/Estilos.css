@@ -412,7 +412,7 @@ input, textarea{
 
 input:focus,textarea:focus{
     outline: none;
-    color: rgb(94,93,93);
+    color: rgb(109, 109, 109);
 }
 
 input:focus~label, 
@@ -498,10 +498,33 @@ button{
     padding: 0;
     box-sizing: border-box;
 }
-.warning{
-    width: 200px;
+
+label {
+    clear: both;
+    float: left;
+    width: 180px;
+}
+.error-control {
+    border: 1px solid red;
+}
+
+label.error {
+    color: red;
+    width: 300px;
+    font-size: 0.8em;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+.feri{
+    background-image: url(778479.jpg);
+    color: rgb(129, 129, 129);
+    
+    
+}
+h3{
     text-align: center;
-    margin: auto;
-    color: #e7c60c;
-    padding-top: 20px;
+}
+.cajon{
+    justify-content: center;
+    align-items: center;
 }

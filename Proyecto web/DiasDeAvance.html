@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Dias de trabajo</title>
+    <script src="js/funciones.js"></script>
+    <link rel="stylesheet" href="css/Estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $("#enviar").click(function(){
+
+                $.get("https://apis.digital.gob.cl/fl/feriados/2021",
+                    function(data){
+                        
+                        $.each(data,function(i,item){
+                            $("#fechas").append("<tr><td>"+item.nombre+"</td><td>"+item.fecha +
+                            "</td><td>"+ item.tipo+ "</td><td>"+item.irrenunnciable+"</td></tr>");
+                            
+
+                        });
+
+                    });
+            });
+        })
+    </script>
+    <style>
+        #cajon{
+            margin-left:40px;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="file:///C:/Users/hp/Desktop/proyecto%20web/index.html">
+          <img src="img/LogoMakr-4siPnE.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          VisualGeek
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="file:///C:/Users/hp/Desktop/proyecto%20web/Quienes%20somos.html#">Quiénes Somos <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/hp/Desktop/Proyecto%20web/Galeria.html">Lore</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="feri">
+    <h3>Si te gustaria participar en esta pagina web conoce nuestras fechas de avance</h3>
+    <hr>
+    <div id="cajon">
+        <button type="button" id="enviar">Mostrar</button>
+    <br><br>
+</div>
+
+    <table class="table" id="fechas">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Irrenunciable</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+
+    </table>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+
+</html>
