@@ -380,7 +380,7 @@ textarea{
       justify-content: center;
       color: black;
   }
-  form{
+  .forma{
     background: rgba(99, 94, 94, 0.507);
     width: 30%;
     padding: 10px 0;
@@ -518,8 +518,6 @@ label.error {
 .feri{
     background-image: url(778479.jpg);
     color: rgb(129, 129, 129);
-    
-    
 }
 h3{
     text-align: center;
